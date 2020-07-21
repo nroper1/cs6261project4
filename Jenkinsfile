@@ -24,10 +24,12 @@ pipeline {
 	     fixed {
 		docker rm testcontainer || true
     }
+     }
 
      stage('Deploy') {
             steps {
                 docker build -ttestimage /home/nroper1/Documents/cs6261project4
                 echo 'image built'
+    }
     }
 }
