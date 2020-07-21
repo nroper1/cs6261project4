@@ -1,0 +1,71 @@
+
+<h2> Resistance: {{message}}</h2><br>
+
+<p>Select Bands:</p><br>
+<form>
+<label for="firstdigit">Digits: </label>
+
+<select name="firstdigit" id="firstdigit">
+  <option value="0">Black</option>
+  <option value="1">Brown</option>
+  <option value="2">Red</option>
+  <option value="3">Orange</option>
+  <option value="4">Yellow</option>
+  <option value="5">Green</option>
+  <option value="6">Blue</option>
+  <option value="7">Violet</option>
+  <option value="8">Grey</option>
+  <option value="9">White</option>
+</select>
+<select name="seconddigit" id="seconddigit">
+  <option value="0">Black</option>
+  <option value="1">Brown</option>
+  <option value="2">Red</option>
+  <option value="3">Orange</option>
+  <option value="4">Yellow</option>
+  <option value="5">Green</option>
+  <option value="6">Blue</option>
+  <option value="7">Violet</option>
+  <option value="8">Grey</option>
+  <option value="9">White</option>
+</select>
+<select name="thirddigit" id="thirddigit">
+  <option value="0">Black</option>
+  <option value="1">Brown</option>
+  <option value="2">Red</option>
+  <option value="3">Orange</option>
+  <option value="4">Yellow</option>
+  <option value="5">Green</option>
+  <option value="6">Blue</option>
+  <option value="7">Violet</option>
+  <option value="8">Grey</option>
+  <option value="9">White</option>
+</select>
+
+<label for="multiplier">Multiplier: </label>
+
+<select name="multiplier" id="multiplier">
+  <option value="1">1</option>
+  <option value="10">10</option>
+  <option value="100">100</option>
+  <option value="1k">1K</option>
+  <option value="10k">10K</option>
+  <option value="100k">100K</option>
+  <option value="1m">1M</option>
+  <option value="10m">10M</option>
+  <option value="100m">100M</option>
+  <option value="1g">1G</option>
+</select>
+
+<label for="tolerance">Tolerance: </label>
+
+<select name="tolerance" id="tolerance">
+  <option value="1">1 (F)</option>
+  <option value="2">2 (G)</option>
+  <option value=".5">0.5 (D)</option>
+  <option value=".25">0.25 (C)</option>
+  <option value=".1">0.1 (B)</option>
+  <option value=".05">0.05 (A)</option>
+</select>
+<button id="submit" onclick="updateResistance(firstdigit, seconddigit, thirddigit, multiplier, tolerance)">Submit</button>
+</form>
