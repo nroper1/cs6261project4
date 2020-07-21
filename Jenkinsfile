@@ -17,8 +17,8 @@ pipeline {
             steps {
  		docker build -ttestimage /home/nroper1/Documents/cs6261project4
 		docker run -d -p 4200:4200 -ttestcontainer -v $WORKSPACE:/home/nroper1/Documents/cs6261project4/log/calculator testimage
-                webdriver-manager update
-		ng e2e --devServerTarget=
+                sh 'webdriver-manager update'
+		sh 'ng e2e --devServerTarget='
             }
         }
 	post {
