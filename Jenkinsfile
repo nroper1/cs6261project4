@@ -12,14 +12,26 @@ pipeline {
                 sh 'ng test'
             }
         }
+        
         stage('e2e') {
             steps {
  		echo 'not yet implemented'
             }
         }
-        stage('Deploy') {
+	post {
+	     fixed {
+		docker rm testcontainer || true
+    }}
+
+     stage('Deploy') {
             steps {
-                echo 'not yet implemented'
+                echo 'not yet
             }
         }
+      post {
+	     fixed {
+		docker rm testcontainer || true
+    }
+     }
+}
 }
