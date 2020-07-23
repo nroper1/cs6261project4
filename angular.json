@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "cs6261project4"
+  "defaultProject": "cs6261project4",
+  "cli": {
+    "analytics": false
+  }
 }
