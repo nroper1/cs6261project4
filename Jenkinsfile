@@ -22,13 +22,15 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'not yet implemented'
+                docker build -ttestimage2 /home/nroper1/Documents/cs6261project4
+ 		docker run -d -p 5000:5000 --name tdeploycontainer -v $WORKSPACE:/home/nroper1/Documents/cs6261project4/log/calculator testimage2
             }
         }
     }
       post {
 	     fixed {
-		echo 'not yet implemented'
+		docker rm testcontainer || true
+		docker rm deploycontainer || true
     }
      }
 }
