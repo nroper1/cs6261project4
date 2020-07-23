@@ -22,10 +22,10 @@ pipeline {
                 echo 'not yet implemented'
             }
         }
-	}
+    }
       post {
 	     fixed {
-		docker rm testcontainer || true
+		echo 'not yet implemented'
     }
      }
 }
