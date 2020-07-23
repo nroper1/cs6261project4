@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'not yet
+                echo 'not yet implemented'
             }
         }
 	}
